@@ -35,6 +35,7 @@ try:
     elif CheckBox_1 == False and driver.find_element(By.XPATH, '//*[@id="checkboxes"]/input[1]').is_selected() == True:
         elemento_checkbox_1 = driver.find_element(By.XPATH, '//*[@id="checkboxes"]/input[1]').click()"""
 
+# Lógica reducida
     if CheckBox_1:
         if element_CheckBox_1.is_selected() != True:
             element_CheckBox_1.click()
@@ -47,6 +48,7 @@ try:
     elif CheckBox_2 == False and driver.find_element(By.XPATH, '//*[@id="checkboxes"]/input[2]').is_selected() == True:
         elemento_checkbox_2 = driver.find_element(By.XPATH, '//*[@id="checkboxes"]/input[2]').click()"""
 
+# Lógica reducida
     if CheckBox_2:
         if element_CheckBox_2.is_selected() != True:
             element_CheckBox_2.click()
