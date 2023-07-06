@@ -20,7 +20,7 @@ try:
 
     texto_temperatura = float(driver.find_element(By.ID, 'wob_tm').text)
 
-    print (f'La temperatura en ', CIUDAD,' es: ',texto_temperatura, 'grados')
+    print (f'La temperatura en', CIUDAD,'es: ',texto_temperatura, 'grados')
 
     if texto_temperatura < T_B:
         print ('La temperatura es baja para la época')
