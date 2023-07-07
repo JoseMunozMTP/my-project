@@ -21,8 +21,6 @@ CheckBox_1 = data['checkbox 1']
 CheckBox_2 = data['checkbox 2']
 
 driver = webdriver.Chrome()
-driver.maximize_window()
-
 
 try:
     driver.get('https://the-internet.herokuapp.com/checkboxes')
