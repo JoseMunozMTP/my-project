@@ -43,10 +43,10 @@ def step_impl(context, mensaje):
 
 
 
-@when('el usuario escribe "Pepe" en el campo')
-def step_impl(context):
+@when('el usuario escribe "(?P<input>.+)" en el campo')
+def step_impl(context, input):
     alert = Alert(context.driver)
-    alert.send_keys('Pepe')
+    alert.send_keys(input)
     time.sleep(1)
 
 @then('aparece el mensaje "(?P<mensaje>.+)"')

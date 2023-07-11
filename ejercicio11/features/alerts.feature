@@ -22,11 +22,11 @@ Feature: Alerts
   Scenario Outline: alert con prompt
     Given el usuario accede al portal
     When el usuario clica en el boton "Click for JS Prompt"
-    And el usuario escribe "Pepe" en el campo
+    And el usuario escribe "<input>" en el campo
     And el usuario clica en "<boton>"
     Then aparece el mensaje "<mensaje>"
 
           Examples:
-        | boton    | mensaje             |
-        | Aceptar  | You entered: Pepe     |
-        | Cancelar | You entered: null|
+        | boton    |   input   | mensaje            |
+        | Aceptar  |   Pepe   | You entered: Pepe   |
+        | Cancelar |   bye    | You entered: null   |
